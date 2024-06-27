@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../src/output.css" rel="stylesheet">
+</head>
+
+<body class="bg-[#1D1A1A] font-novaSquare text-white">
+    <div class="container flex items-center justify-center min-h-screen bg-red-400">
+        <div id="game" class="flex flex-col items-center justify-center gap-12">
+            <div class="flex w-full text-center justify-evenly lg:justify-between">
+                <div class="space-y-3 hud-item">
+                    <p id="progressText" class="text-2xl">
+                        Pertanyaan
+                    </p>
+                    <div id="progressBar" class="w-60 h-9 border-2 border-[#0BDF24] overflow-hidden rounded-full">
+                        <div id="progressBarFull" class="h-full bg-[#0BDF24]"></div>
+                    </div>
+                </div>
+                <div class="hud-item">
+                    <p class="text-2xl">
+                        Score
+                    </p>
+                    <h1 class="text-5xl" id="score">
+                        0
+                    </h1>
+                </div>
+            </div>
+            <h1 id="question" class="text-4xl text-center">What is the answer to this question</h1>
+            <div class="space-y-3">
+                <div
+                    class="flex lg:w-[768px] rounded-md bg-[#125CFF] text-xl px-4 py-3 hover:cursor-pointer hover:shadow-[0_8px_20px_0_rgba(6,183,247,0.5)] hover:scale-[1.02] hover:transition-transform">
+                    <p class="me-6">A</p>
+                    <p class="w-full choice-text" data-number="1">Choice</p>
+                </div>
+                <div
+                    class="flex lg:w-[768px] rounded-md bg-[#125CFF] text-xl px-4 py-3 hover:cursor-pointer hover:shadow-[0_8px_20px_0_rgba(6,183,247,0.5)] hover:scale-[1.02] hover:transition-transform">
+                    <p class="me-6">B</p>
+                    <p class="w-full choice-text" data-number="2">Choice 2</p>
+                </div>
+                <div
+                    class="flex lg:w-[768px] rounded-md bg-[#125CFF] text-xl px-4 py-3 hover:cursor-pointer hover:shadow-[0_8px_20px_0_rgba(6,183,247,0.5)] hover:scale-[1.02] hover:transition-transform">
+                    <p class="me-6">C</p>
+                    <p class="w-full choice-text" data-number="3">Choice 3</p>
+                </div>
+                <div
+                    class="flex lg:w-[768px] rounded-md bg-[#125CFF] text-xl px-4 py-3 hover:cursor-pointer hover:shadow-[0_8px_20px_0_rgba(6,183,247,0.5)] hover:scale-[1.02] hover:transition-transform">
+                    <p class="me-6">D</p>
+                    <p class="w-full choice-text" data-number="4">Choice 4</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../src/output.css" rel="stylesheet">
+</head>
+
+<body class="bg-[#1D1A1A] font-novaSquare text-white">
+    <div class="container flex items-center justify-center min-h-screen">
+        <div id="end" class="flex flex-col gap-4 text-center max-w-80">
+            <h1 id="finalScore" class="my-6 text-4xl">0</h1>
+            <form class="flex flex-col items-center">
+                <h2 id="end-text" class="text-2xl text-center">Masukkan Nama Untuk Menyimpan Skor!</h2>
+                <input type="text" name="name" id="username" placeholder="Enter your name"
+                    class="border-0 shadow-[0_0.1rem_1.4rem_0_rgba(86,185,235,0.5)] p-3 text-xl my-12 focus:outline-2 focus:outline-[#125CFF] focus:ring-4 focus:ring-[#125CFF] rounded-sm text-gray-900">
+                <button
+                    class="rounded-md bg-[#125CFF] text-2xl px-4 py-3 hover:cursor-pointer hover:shadow-[0_8px_20px_0_rgba(6,183,247,0.5)] hover:scale-[1.02] hover:transition-transform w-full disabled:hover:cursor-not-allowed disabled:hover:shadow-none disabled:hover:transform-none"
+                    id="saveScoreBtn" type="submit" onclick="saveHighScore(event)" disabled>Simpan Hasil</button>
+            </form>
+            <a href="question.html"
+                class="rounded-md bg-[#125CFF] text-2xl px-4 py-3 hover:cursor-pointer hover:shadow-[0_8px_20px_0_rgba(6,183,247,0.5)] hover:scale-[1.02] hover:transition-transform">Main
+                Lagi</a>
+            <a href="quiz.html"
+                class="rounded-md bg-[#125CFF] text-2xl px-4 py-3 hover:cursor-pointer hover:shadow-[0_8px_20px_0_rgba(6,183,247,0.5)] hover:scale-[1.02] hover:transition-transform">Menu
+                Kuis</a>
+        </div>
+    </div>
+
+    <script src="script-score.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../src/output.css" rel="stylesheet">
+</head>
+
+<body class="bg-[#1D1A1A] font-novaSquare text-white">
+    <div class="container flex items-center justify-center min-h-screen">
+        <div id="highScores" class="flex-center flex-column">
+            <h1 id="finalScore" class="text-5xl">Leaderboard</h1>
+            <div class="flex justify-center mx-auto my-12 h-fit w-fit">
+                <ul id="highScoresList" class="space-y-2"></ul>
+            </div>
+            <a href="quiz.html"
+                class="text-2xl py-4 text-center bg-[#125CFF] w-72 block rounded-md hover:shadow-[0_8px_20px_0_rgba(8,114,244,0.6)] hover:scale-[1.05] hover:transition-transform text-white">Menu
+                Kuis</a>
+        </div>
+    </div>
+    <script>
+        const highScoreList = document.querySelector('#highScoresList')
+        const highScores = JSON.parse(localStorage.getItem('highScores')) || []
+
+        highScoreList.innerHTML =
+            highScores.map(score => {
+                return `<li class="text-2xl list-decimal ">${score.name} - ${score.score}</li>`
+            }).join('')
+    </script>
+</body>
+
+</html>
