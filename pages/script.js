@@ -10,46 +10,47 @@ let score = 0
 let questionCounter = 0
 let availableQuestions = []
 
-let questions = [{
-    question: 'Apakah Dimas Punya Pacar?',
-    choice1: 'tidak',
-    choice2: 'punya',
-    choice3: 'punya 2',
-    choice4: 'punya 3',
-    answer: 1,
-},
-{
-    question: "Jogja letaknya dimana?",
-    choice1: "Jawa Tengah",
-    choice2: "Ganjar",
-    choice3: "Malaysia",
-    choice4: "Tanggerang",
-    answer: 1,
-},
-{
-    question: "Coba Tebak jawaban yang benar yang mana",
-    choice1: "ini",
-    choice2: "pasti ini",
-    choice3: "bukan yg ini",
-    choice4: "lah",
-    answer: 2,
-},
-{
-    question: "sebutkan....",
-    choice1: "ini",
-    choice2: "pasti ini",
-    choice3: "bukan yg ini",
-    choice4: "lah",
-    answer: 3,
-},
-{
-    question: "siapa yang recal2?",
-    choice1: "gibran",
-    choice2: "prabowo",
-    choice3: "Anis",
-    choice4: "Ganjar",
-    answer: 2,
-}
+const questions = [
+    {
+        question: 'Apa yang dapat membantu mengurangi risiko penyakit jantung?',
+        choice1: 'Merokok dan minum alkohol secara teratur',
+        choice2: 'Makan makanan tinggi kolesterol',
+        choice3: 'Berhenti merokok, makan makanan sehat, dan berolahraga secara teratur',
+        choice4: 'Mengonsumsi makanan berlemak tinggi',
+        answer: 3,
+    },
+    {
+        question: "Aktivitas fisik yang teratur membantu mengurangi risiko penyakit jantung dengan cara?",
+        choice1: "Menurunkan kadar HDL (kolesterol baik)",
+        choice2: "Meningkatkan tekanan darah",
+        choice3: "Memperbaiki fungsi jantung dan pembuluh darah",
+        choice4: "Meningkatkan risiko diabetes tipe 2",
+        answer: 3,
+    },
+    {
+        question: "Apa peran diet sehat dalam pencegahan penyakit jantung?",
+        choice1: "Meningkatkan risiko kolesterol tinggi",
+        choice2: "Mengurangi risiko penyumbatan pembuluh darah",
+        choice3: "Menurunkan denyut jantung",
+        choice4: "Meningkatkan tekanan darah",
+        answer: 2,
+    },
+    {
+        question: "Mengontrol tekanan darah dapat membantu mencegah penyakit jantung dengan cara?",
+        choice1: "Meningkatkan risiko aterosklerosis",
+        choice2: "Memperburuk fungsi jantung",
+        choice3: "Mengurangi beban kerja jantung",
+        choice4: "Meningkatkan risiko diabetes tipe 1",
+        answer: 3,
+    },
+    {
+        question: "Apa yang dimaksud dengan indeks massa tubuh (BMI) yang sehat dalam konteks pencegahan penyakit jantung?",
+        choice1: "BMI tinggi berhubungan dengan risiko lebih rendah",
+        choice2: "BMI rendah berhubungan dengan risiko lebih rendah",
+        choice3: "BMI normal berhubungan dengan risiko lebih rendah",
+        choice4: "BMI tidak memiliki korelasi dengan risiko penyakit jantung",
+        answer: 3,
+    }
 ]
 
 const SCORE_POINTS = 20
